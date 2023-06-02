@@ -9,8 +9,9 @@ npm install express
 
 ### Compiles and hot-reloads for development
 ```
+first come to ./server  node app.js
+second come to ./server/api node userApi.js
 npm run serve
-to 
 ```
 
 ### Compiles and minifies for production
