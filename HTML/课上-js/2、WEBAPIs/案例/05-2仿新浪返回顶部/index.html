@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .content {
+            width: 1000px;
+            height: 3000px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .backtop {
+            display: none;
+            width: 50px;
+            left: 50%;
+            margin: 0 0 0 505px;
+            position: fixed;
+            bottom: 60px;
+            z-index: 100;
+        }
+
+        .backtop a {
+            height: 50px;
+            width: 50px;
+            background: url(./images/bg2.png) 0 -600px no-repeat;
+            opacity: 0.35;
+            overflow: hidden;
+            display: block;
+            text-indent: -999em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content"></div>
+    <div class="backtop">
+        <img src="./images/close2.png" alt="">
+        <a href="javascript:;"></a>
+    </div>
+    <script>
+        // 获取元素
+        let backtop=document.querySelector('.backtop')
+        // 1、页面滚动事件
+        window.addEventListener('scroll',function(){
+            // 2、检测滚动的距离
+            // num是一个变量，如果在下面的点击事件中给num赋值的话，num只会等于这个值而不是scrollTop等于赋予的值
+            let num=document.documentElement.scrollTop
+            console.log(num)
+            // 3、进行判断显示和隐藏
+            if(num >=500){
+                // 显示返回顶部元素
+                backtop.style.display='block'
+            }else{
+                // 否则隐藏元素
+                backtop.style.display='none'
+            }
+           
+        })
+        // 点击链接返回顶部
+        // 事件防灾滚动事件之外可以节约性能，如果放在内部的话，每次滚动都要执行一次，影响浏览器性能
+        backtop.children[1].addEventListener('click',function(){
+            document.documentElement.scrollTop=0
+        })
+        
+        
+    </script>
+</body>
+
+</html>

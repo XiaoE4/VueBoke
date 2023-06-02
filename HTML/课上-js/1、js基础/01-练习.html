@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <script> // 练习1
+        // 交换变量num1和num2
+        let num1=10 , num2=20
+        let temp
+        temp=num1,num1=num2,num2=temp
+        console.log(num1,num2);
+    </script> -->
+    <!-- <script>    // 练习2
+        let arr=['星期一','星期二']
+        console.log(arr[0]);
+        console.log(arr[1])
+    </script> -->
+    <!-- <script>    // 练习3
+        let userName = prompt('你的名字是：')
+        let age = prompt('你的年龄是：')
+        document.write(`大家好，我是<span>${userName}</span>,今年${age}岁了！`)
+    </script> -->
+    <!-- <script>    // 练习4
+        let num = 10
+        console.log(typeof num + '11')      //number11
+        console.log(num + '11')             //1011
+        console.log(typeof (num + '11'))    //string
+        console.log(num + '11')             //1011
+        console.log(typeof(num + + '11'))   //number
+        console.log(num + + '11')           //21
+    </script>    -->
+    <!-- <script>    // 练习5
+        let num1 = prompt("请输入第一个数")
+        let num2 = prompt("请输入第二个数")
+        parseInt(num1)
+        console.log(num1)
+        alert(num1 + +num2)
+        
+    </script> -->
+    <!-- <script>
+        let price = prompt('输入价格：')
+        let num = prompt('输入数量')
+        let address = prompt('输入地址：')
+        let total = Number(price) * Number(num)
+
+
+        document.write(`
+        <table>
+            <caption>
+                <h2>订单</h2>
+            </caption>
+        <tr>
+            <th>名称</th>
+            <th>单价</th>
+            <th>数量</th>
+            <th>地址</th>
+            <th>总价</th>
+        </tr>
+        <tr>
+            <td>小苏打</td>
+            <td>${price}元</td>
+            <td>${num}</td>
+            <td>${address}</td>
+            <td>${total}元</td>
+        </tr>
+        </table>
+        `)
+    </script> -->
+
+    <script>
+        // console.log(true ? 1:2)
+        // console.log(false ? 1:2)
+
+
+        // let num1=30
+        // let num2=40
+        // num1 >num2 ? console.log(num1) : console.log(num2);
+        // // re => result结果（可以任设变量）
+        // let re = num1 > num2 ?   num1 : num2
+        // console.log(re);
+
+
+        // let num1 = +prompt("输入第一个数：")
+        // let num2 = +prompt("输入第二个数：")
+
+        // num1 > num2 ? console.log(num1) : console.log(num2);
+        
+        // let rea= num1 > num2 ? num1 : num2
+        // console.log(rea)
+        
+
+        // // 1、用户输入数字
+        // let num = prompt("输入一个数：")
+        // // 2、判断条件是 小于10，则数字前面 + 0 01 否则不补
+        // let re = num >= 10 ? num : '0' + num
+        // console.log(re);
+
+        // if (3<5) console.log(11);
+
+
+        // switch (4) {
+        //     case 1:
+        //         alert(1)
+        //         break;
+        //     case 2:
+        //         alert(2)
+        //         break;
+        //     case 3:
+        //         alert(3)
+        //         break;
+        //     default:
+        //         alert('none')
+        //         break;
+        // }
+
+
+        // // 循环必须有三要素            
+        // // 变量的起始值
+        // let i=1
+        // // 终止条件
+        // while(i<=10){
+        //     document.write(`月薪过万，第${i}次。<br>`)
+        // // 变量变化
+        //     i++
+        // }
+
+
+            // // 1、输出1~100个数字
+            // let a=1
+            // while(a<=100){
+            //     document.write(`这个数字是${a}<br>`)
+            //     a++
+            // }
+
+
+            // // 2、输出1加到100的总和并输出
+            // let b=1
+            // let re=0
+            // while(b<=100){
+            //     re=re+b
+            //     b++
+            // }
+            // document.write(re)
+
+
+            // // 3、计算1-100之间的所有偶数和
+            // let i=1
+            // let sum=0
+            // while(i<=100){
+            //     if(i%2===0){
+            //         sum=sum+i
+            //     }
+            //     i++
+            // }
+            // document.write(sum)
+
+            // while(true){
+            //     let a=prompt('你爱我吗')
+            //     if(a==='爱'){
+            //         alert('爱你！') 
+            //         break
+            //     }
+            // }
+
+            // let m= 2000
+            // while(true){
+            //     let i =prompt(`请选择你的操作:
+            //                 1、存款
+            //                 2、取款
+            //                 3、查看余额
+            //                 4、退出`)
+            //         switch(i){
+            //             case '1':
+            //                 let a=+prompt('输入存款金额')
+            //                 m=m+a
+            //                 continue
+            //             case '2':
+            //                 let b=+prompt('输入取款金额')
+            //                 m=m-b
+            //                 continue
+            //             case '3':
+            //                 let c=+prompt(`你当前的余额为${m}元！`)
+            //                 continue
+            //         }
+            //         if (i==='4'){
+            //             break
+            //         }
+            // }
+
+
+
+
+    </script>
+
+    
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aqua{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button class="aqua">第1个</button>
+    <button>第2个</button>
+    <button>第3个</button>
+    <button>第4个</button>
+    <button>第5个</button>
+    <script>
+        let btns =document.querySelectorAll('button')
+        for(let i =0;i<btns.length;i++){
+            btns[i].addEventListener('click',function(){
+                // // 干掉所有人
+                // for(let j=0;j<btns.length;j++){
+                //     btns[j].classList.remove('aqua')
+                // }
+                // 找出唯一的aqua色，删除
+                document.querySelector('.aqua').classList.remove('aqua')
+                // 复活我自己
+                this.classList.add('aqua')
+            })
+        }
+    </script>
+</body>
+</html>
